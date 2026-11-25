@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="26.2.2" type="device">
+  <diagram id="model" name="ER · Модель данных">
+    <mxGraphModel grid="1" gridSize="10" page="0" pageWidth="1140" pageHeight="910" background="#ffffff" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="acct" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="24" y="25" width="258" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="acctHeader" parent="acct" vertex="1" value="&lt;b&gt;Пользователь&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="acctBody" parent="acct" vertex="1" value="PK  user_id&lt;br&gt;Логин (UQ)" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="project" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="405" y="25" width="258" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="projectHeader" parent="project" vertex="1" value="&lt;b&gt;Проект&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="projectBody" parent="project" vertex="1" value="PK  project_id&lt;br&gt;FK  owner_id&lt;br&gt;Название, словарь черновика" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="asset" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="793" y="25" width="258" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="assetHeader" parent="asset" vertex="1" value="&lt;b&gt;Версия изображения&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="assetBody" parent="asset" vertex="1" value="PK  asset_id&lt;br&gt;FK  project_id&lt;br&gt;Код, хеш, ключ файла" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="24" y="282" width="258" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="saveHeader" parent="save" vertex="1" value="&lt;b&gt;Прохождение&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="saveBody" parent="save" vertex="1" value="PK  progress_id&lt;br&gt;FK  reader_id, project_id&lt;br&gt;FK  release_id&lt;br&gt;UQ  reader_id + project_id&lt;br&gt;Позиция, состояние (JSONB)&lt;br&gt;Статус, номер шага" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="chapter" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="405" y="282" width="258" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="chapterHeader" parent="chapter" vertex="1" value="&lt;b&gt;Глава&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="chapterBody" parent="chapter" vertex="1" value="PK  chapter_id&lt;br&gt;FK  project_id&lt;br&gt;UQ  project_id + номер&lt;br&gt;Номер, ревизия черновика&lt;br&gt;Точка входа" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="doc" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="793" y="282" width="258" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="docHeader" parent="doc" vertex="1" value="&lt;b&gt;Документ&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="docBody" parent="doc" vertex="1" value="PK  document_id&lt;br&gt;FK  chapter_id&lt;br&gt;UQ  chapter_id + путь&lt;br&gt;Путь, текст DSL" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="rel" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="24" y="572" width="258" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="relHeader" parent="rel" vertex="1" value="&lt;b&gt;Публикация&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="relBody" parent="rel" vertex="1" value="PK  release_id&lt;br&gt;FK  chapter_id (UQ)&lt;br&gt;FK  run_id (UQ)&lt;br&gt;Снимок, версия языка&lt;br&gt;Дата выпуска" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="run" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="405" y="572" width="258" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="runHeader" parent="run" vertex="1" value="&lt;b&gt;Проверка&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="runBody" parent="run" vertex="1" value="PK  run_id&lt;br&gt;FK  chapter_id&lt;br&gt;Снимок, отпечаток, версия&lt;br&gt;Режим, статус, диагностика&lt;br&gt;Настройки, крайний срок&lt;br&gt;Время запроса и окончания" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="ra" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=0;">
+          <mxGeometry x="793" y="572" width="258" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="raHeader" parent="ra" vertex="1" value="&lt;b&gt;Ресурс публикации&lt;/b&gt;" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;align=left;spacingLeft=11;fontSize=16;">
+          <mxGeometry x="0" y="0" width="258" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="raBody" parent="ra" vertex="1" value="PK/FK  release_id&lt;br&gt;PK/FK  asset_id" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=11;spacingTop=4;fontSize=15;">
+          <mxGeometry x="0" y="34" width="258" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" parent="1" source="acct" target="project" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="335" y="67.5" />
+              <mxPoint x="335" y="78" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" parent="1" source="project" target="asset" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" parent="1" source="acct" target="save" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.32;exitY=1;exitDx=0;exitDy=0;entryX=0.32;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" parent="1" source="project" target="save" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.22;exitY=1;exitDx=0;exitDy=0;entryX=0.78;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="461.76" y="202" />
+              <mxPoint x="225.24" y="202" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" parent="1" source="project" target="chapter" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" parent="1" source="chapter" target="doc" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=1;exitY=0.42905405405405406;exitDx=0;exitDy=0;entryX=0;entryY=0.41732283464566927;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="345.5" />
+              <mxPoint x="715" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" parent="1" source="chapter" target="run" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" parent="1" source="chapter" target="rel" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0;exitY=0.42905405405405406;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="345.5" />
+              <mxPoint x="340" y="492" />
+              <mxPoint x="230.4" y="492" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" parent="1" source="rel" target="save" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.3;exitY=0;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" parent="1" source="run" target="rel" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0;exitY=0.4378698224852071;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" parent="1" source="rel" target="ra" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="153" y="790" />
+              <mxPoint x="922" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" parent="1" source="asset" target="ra" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=12;endSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1096" y="78" />
+              <mxPoint x="1096" y="614.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

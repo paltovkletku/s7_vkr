@@ -1,0 +1,46 @@
+@startuml
+hide footbox
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 15
+skinparam dpi 145
+skinparam ParticipantBackgroundColor white
+skinparam LifeLineBackgroundColor white
+skinparam SequenceGroupHeaderBackgroundColor white
+skinparam sequenceMessageAlign center
+skinparam ParticipantPadding 18
+participant "Читатель" as R
+participant "Веб-приложение" as W
+participant "Интерпретатор" as K
+participant "Хранилище\nглав и прогресса" as D
+
+== Открытие главы ==
+R -> W : Открыть главу
+activate W
+W -> K : Подготовить сцену для чтения
+activate K
+K -> D : Загрузить главу и прогресс
+activate D
+D --> K : Сценарий и сохранённый прогресс
+deactivate D
+K --> W : Сцена и доступные варианты
+deactivate K
+W --> R : Показать сцену
+deactivate W
+
+== Чтение ==
+R -> W : Продолжить чтение\nили выбрать вариант
+activate W
+W -> K : Обработать действие читателя
+activate K
+K -> D : Сохранить прогресс
+activate D
+D --> K : Прогресс сохранён
+deactivate D
+K --> W : Продолжение или конец главы
+deactivate K
+W --> R : Показать результат
+deactivate W
+@enduml
