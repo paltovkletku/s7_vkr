@@ -1,0 +1,74 @@
+@startuml
+hide footbox
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 15
+skinparam dpi 145
+skinparam ParticipantBackgroundColor white
+skinparam ActivityBackgroundColor white
+skinparam LifeLineBackgroundColor white
+skinparam SequenceGroupHeaderBackgroundColor white
+skinparam sequenceMessageAlign center
+skinparam ParticipantPadding 18
+participant "Автор" as A
+participant "Веб-приложение" as W
+participant "Хранилище\nзаданий и выпусков" as D
+participant "Обработчик\nзаданий" as J
+participant "Статический\nанализатор" as K
+
+== Постановка задания ==
+A -> W : «Проверить» или «Проверить\nперед публикацией»
+activate W
+W -> D : Поставить задание\nс режимом, снимком и сроком
+activate D
+D --> W : Номер задания
+deactivate D
+W --> A : Подтверждение и номер
+deactivate W
+
+== Проверка ==
+J -> D : Взять задание из очереди
+activate J
+activate D
+D --> J : Режим, снимок и срок
+deactivate D
+J -> K : Проверить сценарий
+activate K
+K --> J : Статус и диагностика
+deactivate K
+J -> D : Сохранить отчёт и статус
+activate D
+D --> J : Итог сохранён
+deactivate D
+deactivate J
+
+== Отчёт и готовность ==
+A -> W : Открыть статус задания
+activate W
+W -> D : Прочитать итог и\nактуальный снимок
+activate D
+D --> W : Режим, статус, отчёт и версия
+deactivate D
+W --> A : Отчёт. Для финальной проверки —\nитог готовности
+deactivate W
+
+== Публикация в выбранный автором момент ==
+A -> W : Нажать «Опубликовать»
+activate W
+W -> D : Сверить финальную проверку,\nснимок и порядок глав.\nПри готовности создать выпуск
+activate D
+alt Снимок изменился после проверки
+  D --> W : Проверка устарела
+  W --> A : Нужна новая финальная проверка
+else Снимок совпадает и глава готова
+  D --> W : Выпуск зафиксирован
+  W --> A : Глава опубликована
+else Выпуск недоступен по другой причине
+  D --> W : Причина отказа
+  W --> A : Публикация недоступна
+end
+deactivate D
+deactivate W
+@enduml
