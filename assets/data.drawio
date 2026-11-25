@@ -153,9 +153,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="legend" parent="1" vertex="1" value="PK — первичный ключ     ·     FK — внешний ключ     ·     UQ — уникальность     ·     Круг — ноль, черта — один, «лапка» — много" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;align=left;">
-          <mxGeometry x="16" y="825" width="1060" height="30" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
