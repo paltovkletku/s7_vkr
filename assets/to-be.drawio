@@ -98,26 +98,26 @@
         <mxCell id="outcome" parent="1" vertex="1" value="×" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rhombus;perimeter=rhombusPerimeter;fontSize=22;">
           <mxGeometry x="561" y="974" width="38" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="showReport" parent="1" vertex="1" value="Показать отчёт проверки" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
-          <mxGeometry x="440.0" y="1024" width="280" height="52" as="geometry" />
-        </mxCell>
         <mxCell id="finalMode" parent="1" vertex="1" value="×" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rhombus;perimeter=rhombusPerimeter;fontSize=22;">
-          <mxGeometry x="561" y="1105" width="38" height="38" as="geometry" />
+          <mxGeometry x="561" y="1029" width="38" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="modeLabel" parent="1" vertex="1" value="Проверка финальная?" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
-          <mxGeometry x="604" y="1081" width="149" height="22" as="geometry" />
+        <mxCell id="modeLabel" parent="1" vertex="1" value="Режим проверки?" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
+          <mxGeometry x="604" y="1005" width="149" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ordinaryReport" parent="1" vertex="1" value="Получить отчёт по черновику" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
+          <mxGeometry x="60.0" y="1022" width="280" height="52" as="geometry" />
         </mxCell>
         <mxCell id="ordinaryEnd" parent="1" vertex="1" value="" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;ellipse;perimeter=ellipsePerimeter;strokeWidth=3.5;">
-          <mxGeometry x="452" y="1111" width="26" height="26" as="geometry" />
+          <mxGeometry x="187" y="1111" width="26" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ordinaryLabel" parent="1" vertex="1" value="Обычная проверка&lt;br&gt;завершена" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
-          <mxGeometry x="394" y="1140" width="142" height="35" as="geometry" />
+        <mxCell id="ordinaryLabel" parent="1" vertex="1" value="Обычная проверка завершена" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
+          <mxGeometry x="75" y="1141" width="250" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="ordinaryBranch" parent="1" vertex="1" value="нет" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
-          <mxGeometry x="488" y="1100" width="52" height="22" as="geometry" />
+        <mxCell id="ordinaryBranch" parent="1" vertex="1" value="обычная" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
+          <mxGeometry x="460" y="1024" width="85" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="finalBranch" parent="1" vertex="1" value="да" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
-          <mxGeometry x="591" y="1142" width="38" height="22" as="geometry" />
+        <mxCell id="finalBranch" parent="1" vertex="1" value="финальная" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
+          <mxGeometry x="591" y="1072" width="90" height="22" as="geometry" />
         </mxCell>
         <mxCell id="allowed" parent="1" vertex="1" value="×" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rhombus;perimeter=rhombusPerimeter;fontSize=22;">
           <mxGeometry x="561" y="1180" width="38" height="38" as="geometry" />
@@ -125,13 +125,13 @@
         <mxCell id="q" parent="1" vertex="1" value="Глава готова&lt;br&gt;к публикации?" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;">
           <mxGeometry x="601" y="1154" width="138" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="report" parent="1" vertex="1" value="Показать причину,&lt;br&gt;по которой выпуск недоступен" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
+        <mxCell id="report" parent="1" vertex="1" value="Показать отчёт&lt;br&gt;и причину отказа в выпуске" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
           <mxGeometry x="440.0" y="1265" width="280" height="52" as="geometry" />
         </mxCell>
         <mxCell id="fix" parent="1" vertex="1" value="Изучить отчёт&lt;br&gt;и устранить причину отказа" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
           <mxGeometry x="60.0" y="1265" width="280" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="ready" parent="1" vertex="1" value="Показать статус&lt;br&gt;«Готова к публикации»" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
+        <mxCell id="ready" parent="1" vertex="1" value="Показать отчёт и статус&lt;br&gt;«Готова к публикации»" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
           <mxGeometry x="440.0" y="1350" width="280" height="56" as="geometry" />
         </mxCell>
         <mxCell id="publishRequest" parent="1" vertex="1" value="Нажать «Опубликовать»" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fontSize=16;fontFamily=Arial;fontColor=#000000;strokeColor=#000000;fillColor=#ffffff;rounded=1;arcSize=18;fontSize=16;spacing=4;">
@@ -225,13 +225,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge17" parent="1" source="outcome" target="showReport" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+        <mxCell id="edge17" parent="1" source="outcome" target="finalMode" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge18" parent="1" source="showReport" target="finalMode" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+        <mxCell id="edge18" parent="1" source="finalMode" target="ordinaryReport" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge19" parent="1" source="finalMode" target="ordinaryEnd" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;">
+        <mxCell id="edge19" parent="1" source="ordinaryReport" target="ordinaryEnd" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge20" parent="1" source="finalMode" target="allowed" edge="1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.45;endArrow=block;endFill=1;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
